@@ -112,7 +112,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
-    select 
+    select
     <include refid="Base_Column_List" />
     ,
     <include refid="Blob_Column_List" />
@@ -215,11 +215,11 @@
   <update id="updateByExampleWithBLOBs" parameterType="map" >
     update items
     set id = #{record.id,jdbcType=INTEGER},
-      name = #{record.name,jdbcType=VARCHAR},
-      price = #{record.price,jdbcType=REAL},
-      pic = #{record.pic,jdbcType=VARCHAR},
-      createtime = #{record.createtime,jdbcType=TIMESTAMP},
-      detail = #{record.detail,jdbcType=LONGVARCHAR}
+    name = #{record.name,jdbcType=VARCHAR},
+    price = #{record.price,jdbcType=REAL},
+    pic = #{record.pic,jdbcType=VARCHAR},
+    createtime = #{record.createtime,jdbcType=TIMESTAMP},
+    detail = #{record.detail,jdbcType=LONGVARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -227,10 +227,10 @@
   <update id="updateByExample" parameterType="map" >
     update items
     set id = #{record.id,jdbcType=INTEGER},
-      name = #{record.name,jdbcType=VARCHAR},
-      price = #{record.price,jdbcType=REAL},
-      pic = #{record.pic,jdbcType=VARCHAR},
-      createtime = #{record.createtime,jdbcType=TIMESTAMP}
+    name = #{record.name,jdbcType=VARCHAR},
+    price = #{record.price,jdbcType=REAL},
+    pic = #{record.pic,jdbcType=VARCHAR},
+    createtime = #{record.createtime,jdbcType=TIMESTAMP}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
