@@ -55,7 +55,7 @@ public class ItemsController {
                 String newName = UUID.randomUUID()+oldName.substring(oldName.lastIndexOf("."));
 
                 //将此图片上传至本地图片服务器路径
-                file.transferTo(new File("E:/ssm/day3/temp/"+newName));
+                file.transferTo(new File("F:/IdeaProjects/testSSM/temp/"+newName));
 
                 //将此图片传值到items商品中
                 items.setPic("/pic/"+newName);
